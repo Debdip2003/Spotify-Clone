@@ -14,8 +14,8 @@ const Navbar = () => {
                     <img src={assets.arrow_right} alt='' className='w-8 p-2 bg-black rounded-2xl  cursor-pointer' onClick={()=>navigate()}/>
                 </div>
                 <div className='flex items-center gap-4'>
-                    <p className='bg-white text-black text-[15px] px-4 py-1 rounded-2xl cursor-pointer hidden md:block hover:bg-black hover:text-white'>Explore Premieum</p>
-                    <p className='bg-black text-white hover:bg-white hover:text-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer'>Install App</p>
+                    <p className='bg-white text-black text-[15px] px-4 py-1 rounded-2xl cursor-pointer hidden md:block hover:bg-black hover:text-white' onClick={()=>navigate('/signIn')}>Sign In</p>
+                    <p className='bg-black text-white hover:bg-white hover:text-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer' onClick={()=>navigate('/login')}>Log In</p>
                     <p className='bg-purple-500 text-black w-7 h-7 flex items-center justify-center rounded-[50%]'>D</p>
                 </div>
             </div>

@@ -14,10 +14,10 @@ const Sidebar = () => {
                 </div>
                 <div className='flex items-center pl-8 gap-3 mt-4 pb-2 cursor-pointer'>
                     <img src={assets.search_icon} alt='' className='w-6'/>
-                    <p className='font-bold'>Search</p>
+                    <p className='font-bold' onClick={()=>navigate('/search')}>Search</p>
                 </div>
             </div>
-            <div className='bg-[#121212] h-[85%] mt-4'>
+            <div className='bg-[#121212] h-[85%]'>
                 <div className='p-4 flex items-center justify-between'>
                     <div className='flex items-center gap-3'>
                         <img src={assets.stack_icon} alt='' className='w-8'/>

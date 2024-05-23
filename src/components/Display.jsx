@@ -3,6 +3,10 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import DisplayHome from './DisplayHome'
 import DisplayAlbum from './DisplayAlbum'
 import { albumsData } from '../assets/assets'
+import SignIn from './SignIn'
+import PhoneNumber from './PhoneNumber'
+import Search from './Search'
+import LogIn from './LogIn'
 
 const Display = () => {
     const displayRef=useRef()
@@ -25,10 +29,13 @@ const Display = () => {
         <div ref={displayRef} className=' w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0'>
             <Routes>
                 <Route path='/' element={<DisplayHome/>}/>
-                <Route path='/album/:id' element={<DisplayAlbum/>}>
-
-                </Route>
+                <Route path='/album/:id' element={<DisplayAlbum/>}></Route>
+                <Route path='/signIn' element={<SignIn/>}></Route>
+                <Route path='/phonenumber' element={<PhoneNumber/>}></Route>
+                <Route path='/search' element={<Search/>}></Route>
+                <Route path='/login' element={<LogIn/>}></Route>
             </Routes>
+            
         </div>
     )
 }
